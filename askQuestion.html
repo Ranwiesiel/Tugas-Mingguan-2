@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pertanyaan</title>
+    <link rel="stylesheet" type="text/css" href="askQuestion.css">
+</head>
+<body>
+        
+     <!-- Header -->
+
+    <div class="header">
+        <img src="gambar/logoPartai.svg" alt="Logo Partai">
+        <h1>Constitution Party</h1>
+    </div>
+    <div class="jargon">Partai untuk "Integrity, Liberty, &amp; Prosperity!"</div>
+
+    <!-- Menu -->
+    
+    <div class="menu">
+        <a href="index.html">Beranda</a>
+        <a href="askQuestion.html">Pertanyaan?</a>
+    </div>
+    <div class="pembatas"></div>    
+    
+    <!-- Sidebar -->
+    
+     <div class="sidebar">
+        <b>Hubungi Kami:</b>
+        <p>408 West Chestnut Street, Lancaster, Pennsylvania 17603. Amerika Serikat <img src="gambar/benderaUSA.svg" alt="Bendera Amerika"></p>
+        <a target="_blank" href="https://constitutionparty.com/">Website Resmi</a>
+    </div>
+    
+    <!-- Form Content -->
+    
+    <div class="form">
+        <form action="responseQuestion.html" method="post">
+            <div class="formisi">
+                <label for="nama">Nama lengkap:</label>
+                <input id="nama" name="nama" type="text" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="formisi">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="email@gmail.com" required>
+            </div>
+            <div class="formisi">
+                <label for="nomorHP">Nomor Handphone:</label>
+                <input id="nomorHP" name="nomorHP" type="tel" maxlength="14" placeholder="08xxxxxxxxxx" required>
+            </div>
+            <div class="formisi">
+                <label for="alamat">Alamat:</label>
+                <input id="alamat" name="alamat" type="text" placeholder="RT/RW/Desa/Kec/Kab/prov" required>
+            </div>
+            <div class="formisi">
+                <label for="kodePos">Kode Pos:</label>
+                <input id="kodePos" name="kodePos" type="number" placeholder="xxxxx" required>
+            </div>
+            <div class="formisi">
+                <label for="tentang">Pertanyaan tentang:</label>
+                <select id="tentang" name="tentang">
+                    <option value="1">Memperjuangkan hak warga</option>
+                    <option value="2">Membela hak keluarga</option>
+                    <option value="3">Membela hak hidup yang dijamin</option>
+                    <option value="4">Mempertahankan kedaulatan nasional</option>
+                    <option value="5">Membela hak orang - orang</option>
+                    <option value="6">Menentang kebijakan globalisasi</option>
+                    <option value="7">Memperjuangkan keadilan</option>
+                    <option value="8">Mempertahankan kebebasan beragama</option>
+                    <option value="9">Memperjuangkan perdamaian AS.</option>
+                    <option value="10">Mempertahankan kebebasan berbicara</option>
+                    <option value="11">Lainnya</option>
+                </select> 
+            </div>
+            <div class="formisi">                                                       
+                <label for="formTanya">Pertanyaan:</label>
+                <textarea id="formTanya" name="fromTanya" required placeholder="Tulis Pertanyaan Anda disini!"></textarea>
+            </div>
+            <div class="formisi">
+                <b>Ingin Menerima Pesan Melewati:</b>
+                <div>
+                    <label for="pilih1">SMS</label>
+                    <input id="pilih1" name="pilih" type="radio" required>
+                    <label for="pilih2">Telepon</label>
+                    <input id="pilih2" name="pilih" type="radio" required>
+                    <label for="pilih3">Email</label>
+                    <input id="pilih3" name="pilih" type="radio" required>
+                    <label for="pilih4">WhatsApp</label>
+                    <input id="pilih4" name="pilih" type="radio" required>
+                </div>
+            </div>
+            <div>
+                <input type="reset" value="Isi Ulang">
+                <input type="submit" value="Kirim">
+            </div>
+        </form>
+    </div>
+
+        <!-- Footer -->
+   
+    <div class="footer">
+        <p>Ronggo Widjoyo 220411100061 | Dasar Pemrograman Web IF2A</p>
+    </div>
+</body>
+</html>
